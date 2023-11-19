@@ -59,7 +59,7 @@ public static class TaskManager
         task = new Task(
             "التقط المفك",
             "اذهب الي المفك واضغط عليه بكليك شمال",
-            "Staaf");
+            "Staaf", AudioClipName.PickScredriver);
         tasks[tasks.Count - 1].Add(task);
         mainTaskOrder.Add(TaskEnum.PickTheScrewdriver, tasks.Count - 1);
         subTaskOrder.Add(TaskEnum.PickTheScrewdriver, 0);
@@ -67,7 +67,7 @@ public static class TaskManager
         task = new Task(
             "فك البكرة",
             "اذهب الي الثلاجة واضغط علي البكرة بالماوس وزرار A للفك او زرار D للربط",
-            "Bakra");
+            "Bakra", AudioClipName.BakraDecomposition);
         tasks[tasks.Count - 1].Add(task);
         mainTaskOrder.Add(TaskEnum.DecomposeTheBakra, tasks.Count - 1);
         subTaskOrder.Add(TaskEnum.DecomposeTheBakra, 1);
@@ -79,7 +79,7 @@ public static class TaskManager
         task = new Task(
             "التقط البنسة",
             "اذهب الي البنسة واضغط عليها بكليك شمال",
-            "pliers");
+            "pliers", AudioClipName.PickBensa);
         tasks[tasks.Count-1].Add(task);
         mainTaskOrder.Add(TaskEnum.PickThePliers, tasks.Count-1);
         subTaskOrder.Add(TaskEnum.PickThePliers, 0);
@@ -87,7 +87,7 @@ public static class TaskManager
         task = new Task(
             "فك الصامولة",
             "اضغط علي الصامولة واللف بأستخدام A و D للفك او الربط",
-            "Nut");
+            "Nut", AudioClipName.NutDecomposition);
         tasks[tasks.Count - 1].Add(task);
         mainTaskOrder.Add(TaskEnum.DecomposeTheNut, tasks.Count - 1);
         subTaskOrder.Add(TaskEnum.DecomposeTheNut, 1);
@@ -99,7 +99,7 @@ public static class TaskManager
         task = new Task(
             "ركب الصامولة",
             "اضغط علي الصامولة لاعاداتها مكانها ثم قم بربطها بأستخدام البنسة",
-            "Nut");
+            "Nut", AudioClipName.NutComposition);
         tasks[tasks.Count - 1].Add(task);
         mainTaskOrder.Add(TaskEnum.ComposeTheNut, tasks.Count - 1);
         subTaskOrder.Add(TaskEnum.ComposeTheNut, 0);
@@ -107,7 +107,7 @@ public static class TaskManager
         task = new Task(
             "ركب البكرة",
             "اضغط هلي البكرة لاعادتها مكانها ثم قم بربطها بأستخدام المفك",
-            "Bakra");
+            "Bakra", AudioClipName.BakraComposition);
         tasks[tasks.Count - 1].Add(task);
         mainTaskOrder.Add(TaskEnum.ComposeTheBakra, tasks.Count - 1);
         subTaskOrder.Add(TaskEnum.ComposeTheBakra, 1);
@@ -120,7 +120,7 @@ public static class TaskManager
         task = new Task(
             "العب براحتك",
             "",
-            "");
+            "", AudioClipName.Empty);
         tasks[tasks.Count - 1].Add(task);
         mainTaskOrder.Add(TaskEnum.ItsAllDone, tasks.Count - 1);
         subTaskOrder.Add(TaskEnum.ItsAllDone, 0);

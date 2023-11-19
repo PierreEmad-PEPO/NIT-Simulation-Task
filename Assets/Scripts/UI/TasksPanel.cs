@@ -35,6 +35,7 @@ public class TasksPanel : MonoBehaviour
 
         taskTitle.text = task.Name;
         taskIcon.sprite = undoneIcon;
+        AudioManager.Play(task.AudioClipName);
         HandleInstruction(task.Instruction);
     }
 
